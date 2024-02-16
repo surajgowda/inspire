@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Registration | FashionShow</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="regstyle.css">
+    </head>
+    <body>
+
+
+      <style>
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        
+        /* Firefox */
+        input[type=number] {
+          -moz-appearance: textfield;
+        }
+        
+        img{
+          height: 60px;
+          width: 100px;
+        }
+      .navb{
+        height: 60px;
+        margin-right: 40px;
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: right; 
+      }
+      
+        ul{
+  position: absolute;
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+}
+
+li{
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  display: inline-block;
+  padding: 0px 15px;
+  color: #fff;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.link{
+  position: relative;
+}
+
+.link:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: rgb(36, 88, 231);
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+.link:hover:after{
+  width: 100%;
+  left: 0;
+  background: rgb(36, 88, 231);
+}
+</style>
+<div class="navb">
+        <img id="image" style="margin-right: 85%;" draggable="false" src="logo.png">
+        <ul>
+            <li><a class="link" href="index.html">Home</a></li>
+            <li><a class="link" href="reg.html">Registration</a></li>
+            <li><a class="link" href="eventz.html">Events</a></li>
+            <li><a class="link" href="team.html">Team</a></li>
+          </ul>
+</div>
+    
+
+<div class="center">
+<div class="container">
+      
+        <header>Fashion Show Registration</header>
+
+        <form id="don">
+          <div class="fields">
+
+          <div class="input-field">
+          <label><b>Team Name</b></label>
+          <input id="teamName" type="text" required>    
+          </div>
+
+          <div class="input-field">
+          <label><b>Team Lead Name</b></label>
+          <input id="tln" type="text" required>
+          </div>
+
+          <div class="input-field">
+          <label><b>Team Lead Contact</b></label>
+          <input id="tlc" type="number" required>
+          </div>
+          </div>
+
+          <hr>
+          <header class="less">Participant' List</header>
+          
+          <div class="fields">
+          <div class="input-field">
+          <input id="namebox1" type="text" placeholder="Member 1" required>
+          </div>
+            
+          <div class="input-field">
+          <input id="namebox2" type="text" placeholder="Member 2" required>
+          </div>
+
+          <div class="input-field">
+          <input id="namebox3" type="text" placeholder="Member 3" required>
+          </div>
+
+          <div class="input-field">
+          <input id="namebox4" type="text" placeholder="Member 4" required>
+          </div>
+
+          <div class="input-field">
+          <input id="namebox5" type="text" placeholder="Member 5" required>
+         </div>
+            
+         <div class="input-field">
+         <input id="namebox6" type="text" placeholder="Member 6" required>
+         </div>  
+            
+         <div class="input-field">
+         <input id="namebox7" type="text" placeholder="Member 7" required>
+         </div> 
+
+         <div class="input-field">
+         <input id="namebox8" type="text" placeholder="Member 8" required>
+         </div> 
+
+         <div class="input-field">
+          <input id="namebox9" type="text" placeholder="Member 9" required>
+          </div> 
+
+          <div class="input-field">
+          <input id="namebox10" type="text" placeholder="Member 10" required>
+          </div> 
+
+         <div class="input-field">
+          <input id="namebox11" type="text" placeholder="Additional members">
+          </div> 
+
+        <div class="input-field">
+        <input id="namebox12" type="text" placeholder="Music Link">
+        </div>
+      </div>
+        <hr>
+
+        <a href="mailto:info@inspire2k22.tech"><p>Update?</p></a>
+
+        <button id="submit">Break the Ramp!</button>
+
+      
+  
+      </form>
+    </div>
+    </div>
+ 
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+    <script>
+      document.getElementById("don").addEventListener("submit", function(event){
+      event.preventDefault()
+      });
+    </script>
+        
+        <script type="module">          
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyDeBH4F8U8bbEcqW0dLioHvYi6rlG_RWs0",
+              authDomain: "inspire-1b605.firebaseapp.com",
+              databaseURL: "https://inspire-1b605-default-rtdb.firebaseio.com",
+              projectId: "inspire-1b605",
+              storageBucket: "inspire-1b605.appspot.com",
+              messagingSenderId: "644735382926",
+              appId: "1:644735382926:web:d92686ca49e08248a3a0df",
+              measurementId: "G-JELKWJTSDM"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+
+            import{getDatabase, ref, set, child, update, remove} from "https://www.gstatic.com/firebasejs/9.8.2/firebase-database.js"
+            const db=getDatabase();
+            var submitbtn = document.getElementById("submit");
+
+
+              
+
+            function InsertData(){
+                set(ref(db, "FashionShow/"+tlc.value),{
+                    TeamName: teamName.value,
+                    Contact: tlc.value,
+                    TeamLeadName: tln.value,
+                    mem1: namebox1.value,
+                    mem2: namebox2.value,
+                    mem3: namebox3.value,
+                    mem4: namebox4.value,
+                    mem5: namebox5.value,
+                    mem6: namebox6.value,
+                    mem7: namebox7.value,
+                    mem8: namebox8.value,
+                    mem9: namebox9.value,
+                    mem10: namebox10.value,
+                    addmem: namebox11.value,
+                    musiclink: namebox12.value,
+                })
+                .then(()=>
+                {
+                 alert("data stored");   
+                }).error(()=>{
+                    alert("Unsuccessful"+error);
+                });
+            }
+            submitbtn.addEventListener('click', InsertData);
+          </script>
+    </body>
+</html>

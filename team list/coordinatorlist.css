@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Joan&family=Karla:wght@300&family=Kdam+Thmor+Pro&family=Roboto:wght@300&family=Rubik&display=swap');
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: auto;
+  }
+  h3{
+    font-family: 'Roboto', sans-serif;
+font-size: 30px;
+  }
+  
+  #column {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #column td, #column th {
+    border: 1px solid rgb(122, 116, 116);
+    padding: 8px;
+    padding-left: 18px;
+  }
+  
+  #column tr:nth-child(even){background-color: grey;}
+  
+  #column tr:hover {background-color: #ddd;}
+  
+  #column th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(57, 54, 54);
+    color: white;
+  }
+  td { white-space:pre }

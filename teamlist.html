@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Joan&family=Karla:wght@300&family=Kdam+Thmor+Pro&family=Roboto:wght@300&family=Rubik&display=swap" rel="stylesheet">
+
+
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+
+
+    img{
+        height: 60px;
+        width: 100px;
+      }
+    .navb{
+      height: 60px;
+      margin-right: 40px;
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: right; 
+    }
+    
+      ul{
+position: absolute;
+padding: 0px;
+list-style: none;
+text-align: center;
+}
+
+li{
+position: relative;
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;
+display: inline-block;
+padding: 0px 15px;
+color: #fff;
+}
+
+a{
+text-decoration: none;
+color: #fff;
+}
+
+.link{
+position: relative;
+}
+
+.link:after{
+content: '';
+position: absolute;
+width: 0; height: 3px;
+display: block;
+margin-top: 5px;
+right: 0;
+background: rgb(36, 88, 231);
+transition: width .2s ease;
+-webkit-transition: width .2s ease;
+}
+.link:hover:after{
+width: 100%;
+left: 0;
+background: rgb(36, 88, 231);
+}
+
+
+
+
+
+
+
+
+.collapsible {
+  background-color: rgb(12, 10, 10);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  height: 80px;
+  border: 2px;
+  border-style: solid;
+  text-align: center;
+  outline: none;
+  font-size: 25px;
+}
+h2{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 30px;
+}
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+  margin: 20px;
+  font-size: 20px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #000000;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+}
+
+
+.butt:link, .butt:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.butt:hover, .butt:active {
+  background-color: red;
+}
+
+</style>
+</head>
+<body>
+
+
+
+
+
+
+    <div class="navb">
+        <img id="image" style="margin-right: 85%;" draggable="false" src="logo.png">
+        <ul>
+            <li><a class="link" href="index.html">Home</a></li>
+            <li><a class="link" href="reg.html">Registration</a></li>
+            <li><a class="link" href="teamlist.html">Team List</a></li>
+          </ul>
+  </div>
+
+<h2><b>Inspire Team</b></h2>
+
+<div class="grid-container">
+<div class="grid-item">
+<button type="button" class="collapsible">Team 1</button>
+<div class="content">
+  <h4>Team Captain: Neeraja</h4>
+  <h4>Team Vice-Captain: Ajith</h4>
+  <h4>Team Coordinator: Neelam Deepika</h4>
+  <h4>Coordinator Contact: 9542515780</h4>
+  <a class="butt" href="./team list/team1.html">Team List</a>
+</div>
+</div>
+
+<div class="grid-item">
+<button type="button" class="collapsible">Team 2</button>
+<div class="content">
+  <h4>Team Captain: Anusha</h4>
+  <h4>Team Vice-Captain: Anusha S</h4>
+  <h4>Team Coordinator: Harshitha</h4>
+  <h4>Coordinator Contact: 7259193382</h4>
+  <a class="butt" href="./team list/team2.html">Team List</a>
+</div>
+</div>
+
+
+<div class="grid-item">
+<button type="button" class="collapsible">Team 3</button>
+<div class="content">
+  <h4>Team Captain: Aryan Rai</h4>
+  <h4>Team Vice-Captain: Anusha R</h4>
+  <h4>Team Coordinator: Suraj</h4>
+  <h4>Coordinator Contact: 8217688007</h4>
+  <a class="butt" href="./team list/team3.html">Team List</a>
+</div>
+</div>
+
+<div class="grid-item">
+<button type="button" class="collapsible">Team 4</button>
+<div class="content">
+  <h4>Team Captain: Avinash</h4>
+  <h4>Team Vice-Captain: Harshini</h4>
+  <h4>Team Coordinator: Navinder</h4>
+  <h4>Coordinator Contact: 8867265309</h4>
+  <a class="butt" href="./team list/team4.html">Team List</a>
+</div>
+</div>
+
+<div class="grid-item">
+<button type="button" class="collapsible">Team 5</button>
+<div class="content">
+  <h4>Team Captain: Kaundala Yoshetha</h4>
+  <h4>Team Vice-Captain: Kusuma</h4>
+  <h4>Team Coordinator: Suraj</h4>
+  <h4>Coordinator Contact: 8217688007</h4>
+  <a class="butt" href="./team list/team5.html">Team List</a>
+</div>
+</div>
+
+<div class="grid-item">
+<button type="button" class="collapsible">Team 6</button>
+<div class="content">
+  <h4>Team Captain: Sinchana</h4>
+  <h4>Team Vice-Captain: Samson</h4>
+  <h4>Team Coordinator: Navinder</h4>
+  <h4>Coordinator Contact: 8867265309</h4>
+  <a class="butt" href="./team list/team6.html">Team List</a>
+</div>
+</div>
+
+<div class="grid-item">
+<button type="button" class="collapsible">Team 7</button>
+<div class="content">
+  <h4>Team Captain: Linto</h4>
+  <h4>Team Vice-Captain: Vivek Patel</h4>
+  <h4>Team Coordinator: Pooja</h4>
+  <h4>Coordinator Contact: 8431653762</h4>
+  <a class="butt" href="./team list/team7.html">Team List</a>
+</div>
+</div>
+
+<div class="grid-item">
+<button type="button" class="collapsible">Team 8</button>
+<div class="content">
+  <h4>Team Captain: Subha</h4>
+  <h4>Team Vice-Captain: Priyanka</h4>
+  <h4>Team Coordinator: Deepika</h4>
+  <h4>Coordinator Contact: 9542515780</h4>
+  <a class="butt" href="./team list/team8.html">Team List</a>
+</div>
+</div>
+
+<div class="grid-item">
+<button type="button" class="collapsible">Team 9</button>
+<div class="content">
+  <h4>Team Captain: Sneha V</h4>
+  <h4>Team Vice-Captain: Shikha</h4>
+  <h4>Team Coordinator: Kavya</h4>
+  <h4>Coordinator Contact: 9731980665</h4>
+  <a class="butt" href="./team list/team9.html">Team List</a>
+</div>
+</div>
+
+<div class="grid-item">
+<button type="button" class="collapsible">Team 10</button>
+<div class="content">
+  <h4>Team Captain: Stella Mary</h4>
+  <h4>Team Vice-Captain: Yeshaswini</h4>
+  <h4>Team Coordinator: Ashutosh</h4>
+  <h4>Coordinator Contact: 86096889</h4>
+  <a class="butt" href="./team list/team10.html">Team List</a>
+</div>
+</div>
+
+</div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

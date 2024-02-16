@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: #000;
+  min-height: 100vh;
+  cursor: url(dot.cur),auto;;
+}
+
+.data {
+  color: rgb(139, 139, 139);
+  font-weight: 500;
+  font-size: 2.5vw;
+  font-family: 'Monument';
+  font-weight: lighter;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 7%;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.container video{
+  width: 100%;
+  height: 60%;
+}
+.text-box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  float: center;
+  background: #000;
+  height: 70%;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6.3vw;
+  font-weight: 900;
+  mix-blend-mode: multiply;
+}
+
+.containerrr
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* flex-direction: column; */
+	flex-wrap: wrap;
+}
+.containerrr a
+{
+	position: relative;
+	width: 150px;
+	height: 55px;
+	display: inline-block;
+	background: #fff;
+	margin: 20px;
+}
+.containerrr a:before,
+.containerrr a:after 
+{
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: #f00;
+	transition: 0.5s;
+}
+
+.containerrr a:nth-child(1):before,
+.containerrr a:nth-child(1):after 
+{
+	background: linear-gradient(45deg,#00ccff,#0e1538,#0e1538,#d400d4);
+}
+.containerrr a:nth-child(2):before,
+.containerrr a:nth-child(2):after 
+{
+	background: linear-gradient(45deg,#ff075b,#0e1538,#0e1538,#1aff22);
+}
+
+.containerrr a:hover:before 
+{
+	inset: -3px;
+}
+.containerrr a:hover:after 
+{
+	inset: -3px;
+	filter: blur(10px);
+}
+.containerrr a span 
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	background: #0e1538;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #fff;
+	border: 1px solid #040a29;
+	overflow: hidden;
+}
+.containerrr a span::before 
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -50%;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.075);
+	transform: skew(25deg);
+}
+
+@media only screen and (max-width: 900px) {
+	.data {
+	  display:none;
+	}
+  }
+
+  @media (max-width:480px)  { 
+	body{
+		cursor: none;
+	}
+  }

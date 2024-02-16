@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="regstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Registration | Individual</title> 
+</head>
+<body>
+
+
+
+
+
+<style>
+    img{
+        height: 60px;
+        width: 100px;
+      }
+    .navb{
+      height: 60px;
+      margin-right: 40px;
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: right; 
+    }
+    
+      ul{
+position: absolute;
+padding: 0px;
+list-style: none;
+text-align: center;
+}
+
+li{
+position: relative;
+font-family: 'Montserrat', sans-serif;
+font-size: 1.5vw;
+display: inline-block;
+padding: 0px 15px;
+color: #fff;
+}
+
+
+a{
+text-decoration: none;
+color: rgb(245, 239, 239);
+}
+
+
+.link{
+position: relative;
+}
+
+.link:after{
+content: '';
+position: absolute;
+width: 0; height: 3px;
+display: block;
+margin-top: 5px;
+right: 0;
+background: rgb(36, 88, 231);
+transition: width .2s ease;
+-webkit-transition: width .2s ease;
+}
+.link:hover:after{
+width: 100%;
+left: 0;
+background: rgb(36, 88, 231);
+}
+</style>
+<div class="navb">
+      <img id="image" style="margin-right: 85%;" draggable="false" src="logo.png">
+      <ul>
+          <li><a class="link" href="index.html">Home</a></li>
+          <li><a class="link" href="fashionreg.html">Fashion Show Registration</a></li>
+          <li><a class="link" href="eventz.html">Events</a></li>
+          <li><a class="link" href="teamlist.html">Team List</a></li>
+        </ul>
+</div>
+
+
+
+
+
+
+
+
+<div class="center">
+    <div class="container">
+        <header>Inspire Registration</header>
+        <form id="don">
+                <div class="details personal">
+                    <span class="title">Individual Registration</span>
+<hr>
+                     <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" id="namebox">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" id="dob">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Team Name</label>
+                            <input type="text" placeholder="Enter your team name" id="email">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" placeholder="Enter mobile number" id="phone">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Class</label>
+                            <select id="clas">
+                                <option disabled selected>Select Class</option>
+                                <option>1st BCA</option>
+                                <option>2nd BCA</option>
+                                <option>1st BSc</option>
+                                <option>2nd BSc</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>Roll NO</label>
+                            <input type="text" placeholder="Enter roll no" id="roll">
+                        </div>
+                    
+
+
+                <div class="input-field">
+                <label><b>Select Event 1</b></label>
+            <select id="event1">
+              <option>Select</option>
+                <option>AutoBot X (Coding)</option>
+                <optio>Techblades (IT Manager)</option>
+                <option>Intense (Video Making)</option>
+            </select>
+        </div>
+
+        <div class="input-field">
+            <label><b>Select Event 2</b></label>
+            <select id="event2" >
+              <option>Select</option>
+              <option>Optimus Prime (Personality Event)</option>
+              <option>Unicorn Triology (Logo Design)</option>
+              <option>Energon (Pick&Speak)</option>
+            </select>
+        </div>
+
+        <div class="input-field">
+        <label><b>Any other event (optional)</b></label>
+        <input type="text" id="opt" placeholder="Event Name">
+        </div>
+
+
+    </div>
+</div>       
+ 
+
+<hr>
+<a href="mailto:info@inspire2k22.tech"><p>Update?</p></a>
+<button class="sumbit" id="submit">
+    <span class="btnText" >Submit</span>
+    <i class="fa-regular fa-paper-plane"></i>
+</button>
+
+
+        </form>
+    </div>
+    </div>
+
+
+    <script>
+        document.getElementById("don").addEventListener("submit", function(event){
+        event.preventDefault()
+        });
+    </script>
+        
+
+
+
+
+
+
+
+
+
+
+    <script type="module">
+
+
+          
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
+        const firebaseConfig = {
+          apiKey: "AIzaSyDeBH4F8U8bbEcqW0dLioHvYi6rlG_RWs0",
+          authDomain: "inspire-1b605.firebaseapp.com",
+          databaseURL: "https://inspire-1b605-default-rtdb.firebaseio.com",
+          projectId: "inspire-1b605",
+          storageBucket: "inspire-1b605.appspot.com",
+          messagingSenderId: "644735382926",
+          appId: "1:644735382926:web:d92686ca49e08248a3a0df",
+          measurementId: "G-JELKWJTSDM"
+        };
+      
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+        import{getDatabase, ref, set, child, update, remove} from "https://www.gstatic.com/firebasejs/9.8.2/firebase-database.js"
+        const db=getDatabase();   
+        
+        var submitbtn = document.getElementById("submit");
+
+        function InsertData(){
+            set(ref(db, "Registrations/"+roll.value),{
+                FirstName: namebox.value,
+                DateOfBirth: dob.value,
+                Class: clas.value,
+                RollNo: roll.value,
+                Event1: event1.value,
+                Event2: event2.value,
+                OptionalEvent: opt.value,
+                TeamName: email.value,
+                PhoneNumber: phone.value,
+            })
+            .then(()=>
+            {
+             alert("Registered Successfully");   
+            }).error(()=>{
+                alert("Unsuccessful"+error);
+            });
+        }
+        submitbtn.addEventListener('click', InsertData);
+
+      </script>
+
+</body>
+</html>

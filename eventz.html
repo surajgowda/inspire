@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="eventstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Joan&family=Kdam+Thmor+Pro&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<style>
+    #image{
+        height: 60px;
+        width: 100px;
+      }
+    .navb{
+      height: 60px;
+      margin-right: 40px;
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: right; 
+    }
+    
+      ul{
+position: absolute;
+padding: 0px;
+list-style: none;
+text-align: center;
+}
+
+li{
+position: relative;
+font-family: 'Montserrat', sans-serif;
+font-size: 1.5vw;
+display: inline-block;
+padding: 0px 15px;
+color: #fff;
+}
+
+a{
+text-decoration: none;
+color: #fff;
+}
+
+.link{
+position: relative;
+}
+
+.link:after{
+content: '';
+position: absolute;
+width: 0; height: 3px;
+display: block;
+margin-top: 5px;
+right: 0;
+background: rgb(36, 88, 231);
+transition: width .2s ease;
+-webkit-transition: width .2s ease;
+}
+.link:hover:after{
+width: 100%;
+left: 0;
+background: rgb(36, 88, 231);
+}
+
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 83%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #000000;
+    margin: auto;
+    padding: 20px;
+    border: 3px solid rgb(255, 249, 249);
+    width: 80%;
+    color:rgb(255, 249, 249)
+}
+.modal-content h2{
+  font-size: 5vw;
+  font-family: 'Dancing Script', cursive;
+
+}
+.modal-content p{
+  line-height: 1.6;
+  font-size: 1.5vw;
+  font-family: 'Joan', serif;
+}
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(184, 12, 12);
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+
+
+
+
+
+<div class="navb">
+      <img id="image" style="margin-right: 85%;" draggable="false" src="logo.png">
+      <ul>
+          <li><a class="link" href="index.html">Home</a></li>
+          <li><a class="link" href="reg.html">Registration</a></li>
+          <li><a class="link" href="teamlist.html">Team List</a></li>
+        </ul>
+</div>
+
+<div class="center">
+    <div class="container">
+        <div class="box">
+            <h2 class="name">Coding</h2>
+            <a href="#" class="buy myBtn" >Read More</a>
+            <div class="circle"></div>
+            <img src="img/Code.png" alt="" class="product" draggable="false">
+        </div>
+         <div class="box">
+            <h2 class="name" >IT Manager</h2>
+            <a href="#" class="buy myBtn" >Read More</a>
+            <div class="circle"></div>
+            <img src="img/itman.png" alt="" class="product" draggable="false">
+        </div>
+        <div class="box">
+            <h2 class="name">Statistics</h2>
+            <a href="#" class="buy myBtn">Read More</a>
+            <div class="circle"></div>
+            <img src="img/stat.png" alt="" class="product" draggable="false">
+        </div>
+        
+        <div class="box">
+            <h2 class="name">Photography</h2>
+            <a href="#" class="buy myBtn">Read More</a>
+            <div class="circle"></div>
+            <img src="img/photo.png" alt="" class="product" draggable="false">
+        </div>
+        <div class="box">
+            <h2 class="name">Click and Speak</h2>
+            <a href="#" class="buy myBtn">Read More</a>
+            <div class="circle"></div>
+            <img src="img/pickspeak.png" alt="" class="product" draggable="false">
+        </div>
+        
+        <div class="box">
+            <h2 class="name">Logo Design</h2>
+            <a href="#" class="buy myBtn">Read More</a>
+            <div class="circle"></div>
+            <img src="img/design.png" alt="" class="product" draggable="false">
+        </div>
+        <div class="box">
+            <h2 class="name">Video Making</h2>
+            <a href="#" class="buy myBtn">Read More</a>
+            <div class="circle"></div>
+            <img src="img/video.png" alt="" class="product" draggable="false">
+        </div>
+        <div class="box">
+            <h2 class="name">Mathematics</h2>
+            <a href="#" class="buy myBtn">Read More</a>
+            <div class="circle"></div>
+            <img src="img/math.png" alt="" class="product" draggable="false">
+        </div>
+        <div class="box">
+            <h2 class="name">Personality Round</h2>
+            <a href="#" class="buy myBtn">Read More</a>
+            <div class="circle"></div>
+            <img src="img/manager.png" alt="" class="product" draggable="false">
+        </div>
+        <div class="box">
+            <h2 class="name">Fashion Show</h2>
+            <a href="#" class="buy myBtn">Read More</a>
+            <div class="circle"></div>
+            <img src="img/girl-dynamic-color.png" alt="" class="product" draggable="false">
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button id="myBtn" ></button>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">close</span>
+    <pre>
+      <h2>Rules</h2>
+    <p>1- The event would be held in the 3rd floor, computer lab. 
+2- Participants have to portray their erudition of coding and debugging. 
+    An additional round of multiple choice quiz will be hosted. 
+3- The event would commence on a custom, event-specific built software. 
+4- Maximum entries from each team is granted. 
+5- Questions on C, C++, Java, Python, SQL, and HTML can be expected. 
+6- Individual participation. </p>
+</pre>
+  </div>
+</div>
+<button id="myBtn1" ></button>
+<div id="myModal1" class="modal">
+  <div class="modal-content">
+    <span class="close">close</span>
+    <pre>
+      <h2>Rules</h2>
+    <p>      1- A 3 round, qualifier event. 
+      2- Round one will be held at the 3rd floor, computer lab. Quantitative aptitude, 
+      English and logical reasoning questions need to be answered. 
+      3- Round two, would be group discussion. Topic for the event will be selected 
+      by the judge, on-spot. 
+      4- Round three, would be personal interview. 
+      5- A custom, event-specific software, for the event is built. 
+      6- 3 participants per team. 
+      7- Top 10 performers in aptitude round will be qualified to the next round. 
+      8- Top 5 performers in the discussion will be qualified for the personal 
+      interview. 
+      9- Individual participation.  </p>
+</pre>  
+</div>
+</div>
+<button id="myBtn2" ></button>
+<div id="myModal2" class="modal">
+  <div class="modal-content">
+    <span class="close">close</span>
+    <pre>
+      <h2>Rules</h2>
+    <p>      1- A 2 round event.
+      2- Round 1 of the event is a relay, where the participant's reflexes in answering is tested.
+      3- There will be 3 stages in round 1. Quiz, Crossword and Statistics in Excel.
+      4- Round 2, is a visual event. The participants have to answer the questions based on the video played.
+      5- A team of 2 participants must combine to register.   </p>
+</pre>    </div>
+</div>
+
+<button id="myBtn3" ></button>
+<div id="myModal3" class="modal">
+  <div class="modal-content">
+    <span class="close">close</span>
+    <pre>
+      <h2>Rules</h2>
+    <p>      1- Theme would be announced in the website, on the event day. 
+      2- Submission portal will be open on the website, on the day of the event. 
+      3- Unlimited entries. 
+      4- A maximum of 2 photographs per participant will be accepted. 
+      5- Name of the photograph must be saved by the participant’s roll number. 
+      Example: 20D3081.jpg 
+      6- Edited and downloaded images will lead to disqualification. 
+      7- Individual participation.   </p>
+</pre>  </div>
+</div>
+
+<button id="myBtn4" ></button>
+<div id="myModal4" class="modal">
+  <div class="modal-content">
+    <span class="close">close</span>
+    <pre>
+      <h2>Rules</h2>
+    <p>      1- A 2 round event. 
+      2- 3 participants per team can register. 
+      3- Round 1, one participant would have to describe the word/image/logo/symbol to his team mates, while the team mates guess it. 
+          Round 2, Individual participants would have to speak for and against the selected option. 3 Best teams 
+          (9 participants), would be qualified to Round 2. 
+      4- Each team will be given 3 minutes in round 1, and they would have to guess and describe as many 
+          images/words/logo/symbols, as they can. 
+      5- Each participant will be allotted 90 seconds to exhibit their articulation. 
+      6- A custom, event-specific software, for the event is built, for round 1. 
+        </p>
+</pre>  </div>
+</div>
+<button id="myBtn5" ></button>
+<div id="myModal5" class="modal">
+  <div class="modal-content">
+    <span class="close">close</span>
+    <pre>
+      <h2>Rules</h2>
+    <p>      1- Theme would be announced in the website, 3 days prior to the event. 
+      2- Submission portal will be open on the website, on the day of the event. 
+      3- Unlimited entries. 
+      4- 1 design per participant is the limit. 
+      5- Individual participation.  </p>
+</pre>  </div>
+</div>
+<button id="myBtn6" ></button>
+<div id="myModal6" class="modal">
+  <div class="modal-content">
+    <span class="close">close</span>
+    <pre>
+      <h2>Rules</h2>
+    <p>      1- Topic for the video will be announced 2 days prior to the event. 
+      2- Submission portal will be open on the website, on the day of the event. 
+      3- Length of the video must be lesser than 2 minutes. 
+      4- Size of the video must not exceed 100MB. 
+      5- A maximum of 2 videos per team would be permitted. 
+      6- The video can be edited using any software. Best video will be uploaded on 
+      the webpage. 
+      7- Individual participation.   </p>
+</pre>  </div>
+</div>
+
+<button id="myBtn7" ></button>
+<div id="myModal7" class="modal">
+  <div class="modal-content">
+    <span class="close">close</span>
+    <pre>
+      <h2>Rules</h2>
+    <p>      1- A 3 round event.
+      2- Round 1 of the event is quiz. Questions on all mathematical subjects can be expected.
+      3- Round 2 of the event is a relay. A set of tasks will be assigned to the team, which must be finished in the stipulated time.
+      4- Round 3 of the event is conneXtion. The participants will have to guess the word, by looking at the images presented.
+      5- A team of 3/4 participants must group themselves together. 2 groups from each team is the limit.  </p>
+</pre>  </div>
+</div>
+<button id="myBtn8" ></button>
+<div id="myModal8" class="modal">
+  <div class="modal-content">
+    <span class="close">close</span>
+    <pre>
+      <h2>Rules</h2>
+    <p>      1- A 2 round event. 
+      2- Individual participation. 
+      3- The activities in each round aren’t disclosed. The participant’ personality 
+           and management skills will be tested.  </p>
+</pre>  </div>
+</div>
+<button id="myBtn9" ></button>
+<div id="myModal9" class="modal">
+  <div class="modal-content">
+    <span class="close">Close</span>
+    <pre>
+      <h2>Rules</h2>
+    <p>      1- A minimum of 10 participants in a team. A maximum of 14 participants per team. 
+      2- 5+1 minutes of performance. 
+      3- Background music must be submitted in the web portal, 3 days before the event. 
+      4- Theme: Techie Transformer.  </p>
+</pre>  </div>
+</div>
+
+
+
+  
+
+
+
+
+
+
+
+
+<script>
+var modal = document.getElementsByClassName('modal');
+var btn = document.getElementsByClassName("myBtn");
+var span = document.getElementsByClassName("close");
+
+btn[0].onclick = function() {
+    modal[0].style.display = "block";
+}
+btn[1].onclick = function() {
+    modal[1].style.display = "block";
+}
+btn[2].onclick = function() {
+    modal[2].style.display = "block";
+}
+btn[3].onclick = function() {
+    modal[3].style.display = "block";
+}
+btn[4].onclick = function() {
+    modal[4].style.display = "block";
+}
+btn[5].onclick = function() {
+    modal[5].style.display = "block";
+}
+btn[6].onclick = function() {
+    modal[6].style.display = "block";
+}
+btn[7].onclick = function() {
+    modal[7].style.display = "block";
+}
+btn[8].onclick = function() {
+    modal[8].style.display = "block";
+}
+btn[9].onclick = function() {
+    modal[9].style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span[0].onclick = function() {
+    modal[0].style.display = "none";
+}
+span[1].onclick = function() {
+    modal[1].style.display = "none";
+}
+span[2].onclick = function() {
+    modal[2].style.display = "none";
+}
+span[3].onclick = function() {
+    modal[3].style.display = "none";
+}
+span[4].onclick = function() {
+    modal[4].style.display = "none";
+}
+span[5].onclick = function() {
+    modal[5].style.display = "none";
+}
+span[6].onclick = function() {
+    modal[6].style.display = "none";
+}
+span[7].onclick = function() {
+    modal[7].style.display = "none";
+}
+span[8].onclick = function() {
+    modal[8].style.display = "none";
+}
+span[9].onclick = function() {
+    modal[9].style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+
+
+<script src="vanilla-tilt.min.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".box"), {
+		max: 10,
+		speed: 400
+	});
+</script>
+</html>
